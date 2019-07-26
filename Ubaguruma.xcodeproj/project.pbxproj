@@ -123,7 +123,6 @@
 		B0344FA92299AC97005F94A7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B0860C3922E4AEE000847EFE /* Resources */,
 				B0344FAA2299AC97005F94A7 /* Classes */,
 				B0344FAB2299AC97005F94A7 /* Assets */,
 			);
@@ -143,6 +142,7 @@
 				B084FA6F22B676F6000CF6AF /* ImagePickerController.swift */,
 				B084FA7122B67706000CF6AF /* PhotoStorage.swift */,
 				B0395A7922DD53200040F1C1 /* TappableImageView.swift */,
+				B0860C3722E4AD6500847EFE /* LocalizedString.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -150,19 +150,11 @@
 		B0344FAB2299AC97005F94A7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				B0860C3722E4AD6500847EFE /* LocalizedString.swift */,
+				B0860C4022E4AF6B00847EFE /* Localizable.strings */,
 				B084FA5D22B63766000CF6AF /* NavigationBarViewController.storyboard */,
 				B084FA5F22B6377D000CF6AF /* ContentsNavigationController.storyboard */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		B0860C3922E4AEE000847EFE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B0860C4022E4AF6B00847EFE /* Localizable.strings */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		B0BC5C2322EABEEF00F4D82F /* Extensions */ = {

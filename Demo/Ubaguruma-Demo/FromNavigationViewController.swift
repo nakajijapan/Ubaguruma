@@ -198,6 +198,9 @@ extension FromNavigationViewController: UIDropInteractionDelegate {
     }
     
     func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDropSession) {
+        hideKeyboard()
+        imagePickerController?.dismissIfPresented()
+        
         session.loadObjects(ofClass: UIImage.self) { imageItems in
             let images = imageItems as! [UIImage]
             self.items.append(images.first!)

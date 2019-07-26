@@ -176,6 +176,5 @@ extension ModalCollectionViewController: UICollectionViewDragDelegate {
         let dragItem = UIDragItem(itemProvider: imageItemProvider)
         return [dragItem]
     }
-    
 
 }

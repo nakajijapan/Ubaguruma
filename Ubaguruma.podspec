@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = "Ubaguruma"
-  s.version      = "0.0.1"
+  s.version          = "0.0.3"
   s.summary          = "Ubaguruma can a photo select picker like LINE."
   s.homepage         = "https://github.com/nakajijapan/Ubaguruma"
   s.license          = 'MIT'
   s.author           = { "nakajijapan" => "pp.kupepo.gattyanmo@gmail.com" }
   s.source           = { :git => "https://github.com/nakajijapan/Ubaguruma.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/nakajijapan'
+  #s.social_media_url = 'https://twitter.com/nakajijapan'
 
   s.platform     = :ios, '11.0'
   s.requires_arc = true
