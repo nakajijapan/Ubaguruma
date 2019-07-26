@@ -81,7 +81,7 @@
         <scene sceneID="ZMf-70-A2g">
             <objects>
                 <navigationController id="Kg0-Tn-OdP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="A3P-yG-K3k"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="A3P-yG-K3k"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uhy-sH-Cdp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -180,11 +180,11 @@
             </objects>
             <point key="canvasLocation" x="674" y="-510"/>
         </scene>
-        <!--TabBar-->
+        <!--Navigation Controller-->
         <scene sceneID="aZr-BP-Ha6">
             <objects>
                 <navigationController id="Yv1-kI-PfV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="TabBar" id="Fa2-7T-8Yu"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Fa2-7T-8Yu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oEM-xE-Mnb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
