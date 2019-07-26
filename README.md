@@ -10,7 +10,7 @@
 
 Ubaguruma is a simple photo slider and can delete slider with swiping.
 
-<img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/logo.png" width="300" />
+<img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="300" />
 
 
 
