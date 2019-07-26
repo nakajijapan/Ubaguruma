@@ -23,6 +23,7 @@
 		B084FA7522B67A7A000CF6AF /* Ubaguruma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B084FA7422B67A7A000CF6AF /* Ubaguruma.framework */; };
 		B0860C4322E4C0BF00847EFE /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0860C4222E4C0BF00847EFE /* ImageTableViewCell.swift */; };
 		B0BC5C2522EADA4E00F4D82F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0BC5C2422EADA4E00F4D82F /* README.md */; };
+		B0BC5C2722EAE09700F4D82F /* Ubaguruma.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B0BC5C2622EAE09600F4D82F /* Ubaguruma.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		B084FA7422B67A7A000CF6AF /* Ubaguruma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ubaguruma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0860C4222E4C0BF00847EFE /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		B0BC5C2422EADA4E00F4D82F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B0BC5C2622EAE09600F4D82F /* Ubaguruma.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Ubaguruma.podspec; path = ../Ubaguruma.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BC5C2422EADA4E00F4D82F /* README.md */,
+				B0BC5C2622EAE09600F4D82F /* Ubaguruma.podspec */,
 				B0344F7D2299AB8B005F94A7 /* Ubaguruma-Demo */,
 				B0344F922299AB8D005F94A7 /* Ubaguruma-DemoTests */,
 				B0344F7C2299AB8B005F94A7 /* Products */,
@@ -231,6 +234,7 @@
 			files = (
 				B0344F892299AB8C005F94A7 /* LaunchScreen.storyboard in Resources */,
 				B0344F862299AB8C005F94A7 /* Assets.xcassets in Resources */,
+				B0BC5C2722EAE09700F4D82F /* Ubaguruma.podspec in Resources */,
 				B0BC5C2522EADA4E00F4D82F /* README.md in Resources */,
 				B0344F842299AB8B005F94A7 /* Main.storyboard in Resources */,
 				B0802C0022A2EF5C00EDA1CF /* ChatToolbarView.xib in Resources */,
