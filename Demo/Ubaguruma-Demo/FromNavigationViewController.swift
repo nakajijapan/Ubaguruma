@@ -131,7 +131,6 @@ extension FromNavigationViewController: ChatToolbarViewDelegate {
         let animated: Bool
         if chatToolbarViewBottomConstraint.constant == 0 {
             let safeAreaInsetBottom = view.safeAreaInsets.bottom
-
             let defaultKeyboardMinY: CGFloat = 346
             chatToolbarViewBottomConstraint.constant = defaultKeyboardMinY - safeAreaInsetBottom
             imagePickerController?.visibleHeight = defaultKeyboardMinY
