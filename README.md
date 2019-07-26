@@ -8,10 +8,11 @@
 [![Backers on Open Collective](https://opencollective.com/Ubaguruma/backers/badge.svg)](#backers) 
 [![Sponsors on Open Collective](https://opencollective.com/Ubaguruma/sponsors/badge.svg)](#sponsors) 
 
-Ubaguruma is a simple photo slider and can delete slider with swiping.
+<img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="400" />
+Ubaguruma can a photo select picker like LINE.
 
-<img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="300" />
 
+<img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/demo.gif" width="300" />
 
 
 ## Requirements
