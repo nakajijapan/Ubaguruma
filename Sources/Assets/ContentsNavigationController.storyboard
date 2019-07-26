@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KAR-3u-mfP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contents Navigation Controller-->
+        <scene sceneID="yE5-tK-Vy2">
+            <objects>
+                <navigationController storyboardIdentifier="ContentsNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="KAR-3u-mfP" customClass="ContentsNavigationController" customModule="Ubaguruma" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fbg-18-kGB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xa9-h8-9cR" kind="relationship" relationship="rootViewController" id="xW2-lG-NbU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFq-SN-oje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="1211"/>
+        </scene>
+        <!--Modal Collection View Controller-->
+        <scene sceneID="rHV-Yt-Rqv">
+            <objects>
+                <viewController id="xa9-h8-9cR" customClass="ModalCollectionViewController" customModule="Ubaguruma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tja-bQ-je9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zs5-9t-C0E">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="zgw-Ev-ya0">
+                                    <size key="itemSize" width="110" height="105"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="1" maxX="1" maxY="1"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="RN2-pD-d11" customClass="CollectionViewCell" customModule="Ubaguruma" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="1" width="110" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFH-ft-9SE" customClass="TappableImageView" customModule="Ubaguruma" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="105"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mFH-ft-9SE" firstAttribute="leading" secondItem="RN2-pD-d11" secondAttribute="leading" id="5HE-Tn-WVi"/>
+                                            <constraint firstAttribute="bottom" secondItem="mFH-ft-9SE" secondAttribute="bottom" id="5Iw-C9-5io"/>
+                                            <constraint firstAttribute="trailing" secondItem="mFH-ft-9SE" secondAttribute="trailing" id="ckd-B8-fs2"/>
+                                            <constraint firstItem="mFH-ft-9SE" firstAttribute="top" secondItem="RN2-pD-d11" secondAttribute="top" id="iqw-cd-Rzm"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="tappableImageView" destination="mFH-ft-9SE" id="SwW-U0-Huc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zs5-9t-C0E" firstAttribute="bottom" secondItem="INm-pj-feA" secondAttribute="bottom" id="GaK-86-sc9"/>
+                            <constraint firstItem="Zs5-9t-C0E" firstAttribute="bottom" secondItem="INm-pj-feA" secondAttribute="bottom" id="Imu-o8-X1T"/>
+                            <constraint firstItem="Zs5-9t-C0E" firstAttribute="leading" secondItem="INm-pj-feA" secondAttribute="leading" id="X6q-aF-8HS"/>
+                            <constraint firstItem="Zs5-9t-C0E" firstAttribute="top" secondItem="INm-pj-feA" secondAttribute="top" id="fbz-io-FdC"/>
+                            <constraint firstItem="INm-pj-feA" firstAttribute="trailing" secondItem="Zs5-9t-C0E" secondAttribute="trailing" id="o4M-2N-0I0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="INm-pj-feA"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="47z-gx-2Jo"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Zs5-9t-C0E" id="fsl-bV-MgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xS-lP-nFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269.5652173913045" y="1214.7321428571429"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Ubaguruma
+
+  Created by Daichi Nakajima on 2019/07/21.
+  Copyright © 2019 Daichi Nakajima. All rights reserved.
+*/
+
+"allowPhoto.allowPhoto.title" = "Access";
+"allowPhoto.allowPhoto.message" = "We will access the photo libraries for posting the photo.";
+"allowPhoto.allowPhoto.action.1" = "Setting";
+"allowPhoto.allowPhoto.action.cancel" = "Cancel";
+"closeButton" = "Close";

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Toq-eY-vov">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Bar View Controller-->
+        <scene sceneID="f5l-3p-8bo">
+            <objects>
+                <viewController storyboardIdentifier="NavigationBarViewController" id="Toq-eY-vov" customClass="NavigationBarViewController" customModule="Ubaguruma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="taE-g5-Dz3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDe-WD-1bk">
+                                <rect key="frame" x="16" y="16" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonDidTap:" destination="LuT-lA-brf" eventType="touchUpInside" id="9xg-cT-ClF"/>
+                                    <action selector="closeButtonDidTap:" destination="Toq-eY-vov" eventType="touchUpInside" id="Us2-5I-Yya"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GdS-bE-0AS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bDe-WD-1bk" secondAttribute="trailing" symbolic="YES" id="1Gl-0I-Eyl"/>
+                            <constraint firstItem="GdS-bE-0AS" firstAttribute="bottom" secondItem="bDe-WD-1bk" secondAttribute="bottom" constant="8" id="pyI-s5-Fhn"/>
+                            <constraint firstItem="bDe-WD-1bk" firstAttribute="leading" secondItem="GdS-bE-0AS" secondAttribute="leading" constant="16" id="v78-eI-rGE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GdS-bE-0AS"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="88"/>
+                    <connections>
+                        <outlet property="closeButton" destination="bDe-WD-1bk" id="sM9-6h-4hJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl5-eZ-Rzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LuT-lA-brf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="769"/>
+        </scene>
+    </scenes>
+</document>
