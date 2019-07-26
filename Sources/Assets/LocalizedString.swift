@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct L10n {
+public struct L10n {
     static func localize(_ key: String) -> String {
         guard let bundle = Bundle(identifier: "net.nakajijapan.Ubaguruma") else { return "" }
         return NSLocalizedString(key, tableName: nil, bundle: bundle, comment: "")
