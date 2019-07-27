@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Ubaguruma"
-  s.version          = "0.0.3"
+  s.version          = "0.0.1"
   s.summary          = "Ubaguruma can a photo select picker like LINE."
   s.homepage         = "https://github.com/nakajijapan/Ubaguruma"
   s.license          = 'MIT'
