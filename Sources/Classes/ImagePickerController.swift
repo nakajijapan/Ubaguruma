@@ -25,6 +25,7 @@ public final class ImagePickerController {
     public var contentsNavigationController: ContentsNavigationController!
     public var navigationBarViewController: NavigationBarViewController!
     public var containerController: UIViewController!
+    private var parentNavigationController: UINavigationController!
     public var visibleHeight: CGFloat = 0 {
         didSet {
             contentsNavigationController.visibleHeight = visibleHeight
@@ -38,7 +39,7 @@ public final class ImagePickerController {
         }
     }
     
-    public init() {
+    public init(parentNavigationController: UINavigationController?) {
         let storyboard = UIStoryboard(name: "ContentsNavigationController", bundle: Bundle(for: ContentsNavigationController.self))
         guard let contentsNavigationController = storyboard.instantiateInitialViewController() as? ContentsNavigationController else {
             fatalError("Need the ContentsNavigationController")
@@ -59,15 +60,15 @@ public final class ImagePickerController {
         self.contentsNavigationController.navigationBarViewController = navigationBarViewController
         self.navigationBarViewController = navigationBarViewController
         self.navigationBarViewController.delegate = self
-        
+        self.parentNavigationController = parentNavigationController
     }
     
-    public func present(containerController: UINavigationController?, animated: Bool = true) {
+    public func present(animated: Bool = true) {
         if PHPhotoLibrary.authorizationStatus() != .authorized {
             PHPhotoLibrary.requestAuthorization { [weak self] status in
                 DispatchQueue.main.async { [weak self] in
                     if status == .authorized {
-                        self?.presentControllers(containerController: containerController, animated: animated)
+                        self?.presentControllers(containerController: self?.parentNavigationController, animated: animated)
                     } else if status == .denied {
                         
                         let alertController = UIAlertController(
@@ -84,13 +85,13 @@ public final class ImagePickerController {
                         let closeAction: UIAlertAction = UIAlertAction(title: L10n.localize("allowPhoto.allowPhoto.action.cancel"), style: .cancel, handler: nil)
                         alertController.addAction(settingsAction)
                         alertController.addAction(closeAction)
-                        containerController?.present(alertController, animated: true, completion: nil)
+                        self?.parentNavigationController?.present(alertController, animated: true, completion: nil)
                     }
                 }
             }
         } else {
             DispatchQueue.main.async { [weak self] in
-                self?.presentControllers(containerController: containerController, animated: animated)
+                self?.presentControllers(containerController: self?.parentNavigationController, animated: animated)
             }
         }
         
@@ -112,6 +113,8 @@ public final class ImagePickerController {
         contentsNavigationController.parentNavigationController = containerController
         containerController?.present(contentsNavigationController, animated: animated)
         containerController?.presentNavigationBar(navigationBarViewController, contentsNavigationController: contentsNavigationController)
+
+        parentNavigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     public func dismissIfPresented(completion: (() -> Void)? = nil) {
         if isPresented {
@@ -129,6 +132,8 @@ public final class ImagePickerController {
             completion?()
             self?.contentsNavigationController.view.isHidden = false
         }
+        
+        parentNavigationController.interactivePopGestureRecognizer?.isEnabled = true
     }
 }
 
@@ -148,6 +153,7 @@ extension ImagePickerController: PhotoCollectionViewControllerDelegate {
         parentNavigationController.dismissNavigationBar()
         delegate?.imagePickerDidSelectPhotoAsset(pickerController: self, asset: asset)
 
+        parentNavigationController.interactivePopGestureRecognizer?.isEnabled = true
     }
 }
 

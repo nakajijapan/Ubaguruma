@@ -111,6 +111,10 @@ public extension UINavigationController {
         guard let visibleViewController = self.currentViewController, let index = children.firstIndex(of: visibleViewController) else {
             return
         }
+        guard index - 1 > 0 else {
+            return
+        }
+        
         destinationViewController = children[index - 1]
         
         sourceViewController?.willMove(toParent: nil)

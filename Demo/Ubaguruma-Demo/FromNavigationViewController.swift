@@ -123,7 +123,7 @@ extension FromNavigationViewController: ChatToolbarViewDelegate {
     func chatToolbarViewDidTapImage(chatToolbarView: ChatToolbarView) {
 
         if imagePickerController == nil {
-            imagePickerController = Ubaguruma.ImagePickerController()
+            imagePickerController = Ubaguruma.ImagePickerController(parentNavigationController: navigationController)
         }
         imagePickerController?.delegate = self
         
@@ -147,7 +147,7 @@ extension FromNavigationViewController: ChatToolbarViewDelegate {
 
             animated = false
         }
-        imagePickerController?.present(containerController: navigationController, animated: animated)
+        imagePickerController?.present(animated: animated)
 
     }
 }
