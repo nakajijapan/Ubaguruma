@@ -5,8 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/Ubaguruma.svg?style=flat)](http://cocoapods.org/pods/Ubaguruma)
 [![Platform](https://img.shields.io/cocoapods/p/Ubaguruma.svg?style=flat)](http://cocoapods.org/pods/Ubaguruma)
 [![Language](https://img.shields.io/badge/language-Swift%204-orange.svg)](https://swift.org)
-[![Backers on Open Collective](https://opencollective.com/Ubaguruma/backers/badge.svg)](#backers) 
-[![Sponsors on Open Collective](https://opencollective.com/Ubaguruma/sponsors/badge.svg)](#sponsors) 
 
 <img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="400" />
 Ubaguruma can a photo select picker like LINE.
@@ -68,20 +66,9 @@ imagePickerController?.present(containerController: navigationController, animat
 
 ```
 
-
-
 ## Author
 
 nakajijapan
-
-### Special Thanks
-
-🙅‍♂️
-
-## Contributors
-
-This project exists thanks to all the people who contribute. 
-<a href="https://github.com/nakajijapan/Ubaguruma/graphs/contributors"><img src="https://opencollective.com/Ubaguruma/contributors.svg?width=890&button=false" /></a>
 
 
 ## License
