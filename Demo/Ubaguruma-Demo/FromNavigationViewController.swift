@@ -68,8 +68,8 @@ extension FromNavigationViewController {
         chatToolbarView.status = .default
         chatToolbarViewBottomConstraint.constant = 0
         
-        UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: {
-            self.view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: { [weak self] in
+            self?.view.layoutIfNeeded()
         }, completion: nil)
     }
     
@@ -83,8 +83,8 @@ extension FromNavigationViewController {
         } else {
             imagePickerController?.dismissIfPresented()
             chatToolbarViewBottomConstraint.constant = 0
-            UIView.animate(withDuration: duration, delay: 0.0, options: animationCurve, animations: {
-                self.view.layoutIfNeeded()
+            UIView.animate(withDuration: duration, delay: 0.0, options: animationCurve, animations: { [weak self] in
+                self?.view.layoutIfNeeded()
             }, completion: nil)
 
         }
@@ -104,13 +104,13 @@ extension FromNavigationViewController {
         let safeAreaInsetBottom = view.safeAreaInsets.bottom
         chatToolbarViewBottomConstraint.constant = keyboardFrame.size.height - safeAreaInsetBottom
         if chatToolbarView.status == .selectingPhoto {
-            self.view.layoutIfNeeded()
-            imagePickerController?.dismiss()
+            view.layoutIfNeeded()
         } else {
-            UIView.animate(withDuration: duration, delay: 0.0, options: animationCurve, animations: {
-                self.view.layoutIfNeeded()
+            UIView.animate(withDuration: duration, delay: 0.0, options: animationCurve, animations: { [weak self] in
+                self?.view.layoutIfNeeded()
             })
         }
+        imagePickerController?.dismiss()
     }
         
     @objc func handleKeyboardDidShowNotification(_ notification: Notification) {
@@ -237,5 +237,4 @@ extension FromNavigationViewController: UITableViewDataSource {
 }
 
 extension FromNavigationViewController: UITableViewDelegate {
-
 }
