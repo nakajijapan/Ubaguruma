@@ -7,7 +7,7 @@
 [![Language](https://img.shields.io/badge/language-Swift%204-orange.svg)](https://swift.org)
 
 <img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="400" />
-Ubaguruma can a photo select picker like LINE.
+Ubaguruma  a photo select picker like LINE.
 
 
 <img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/demo.gif" width="300" />
