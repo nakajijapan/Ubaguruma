@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Ubaguruma.svg?style=flat)](http://cocoapods.org/pods/Ubaguruma)
 [![License](https://img.shields.io/cocoapods/l/Ubaguruma.svg?style=flat)](http://cocoapods.org/pods/Ubaguruma)
 [![Platform](https://img.shields.io/cocoapods/p/Ubaguruma.svg?style=flat)](http://cocoapods.org/pods/Ubaguruma)
-[![Language](https://img.shields.io/badge/language-Swift%204-orange.svg)](https://swift.org)
+[![Language](https://img.shields.io/badge/language-Swift%205-orange.svg)](https://swift.org)
 
 <img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="400" />
 Ubaguruma is a photo select picker like LINE.
