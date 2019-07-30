@@ -1,4 +1,16 @@
-# Ubaguruma
+
+<h1 align="center">Ubaguruma</h1>
+
+<p align="center"><strong>Ubaguruma is a photo select picker like LINE.</strong></p>
+<br />
+<p align="center">
+<img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="400" />
+</p>
+
+<p align="center">
+<br />
+</p>
+
 
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/Ubaguruma.svg?style=flat)](http://cocoapods.org/pods/Ubaguruma)
@@ -6,9 +18,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/Ubaguruma.svg?style=flat)](http://cocoapods.org/pods/Ubaguruma)
 [![Language](https://img.shields.io/badge/language-Swift%205-orange.svg)](https://swift.org)
 
-<img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/Ubaguruma.png" width="400" />
-Ubaguruma is a photo select picker like LINE.
 
+# Demo
 
 <img src="https://raw.githubusercontent.com/nakajijapan/Ubaguruma/master/demo.gif" width="300" />
 
